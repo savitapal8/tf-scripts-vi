@@ -9,7 +9,7 @@ resource "google_kms_crypto_key" "key" {
   name            = var.key_name
   key_ring        = google_kms_key_ring.keyring.id
   rotation_period = var.rotation_period
-
+  labels = var.labels
   lifecycle {
     prevent_destroy = false
   }
