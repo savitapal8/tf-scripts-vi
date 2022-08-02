@@ -1,11 +1,13 @@
 provider "google-beta" {
   project     = var.provider_project
   region      = var.provider_region
+  access_token = var.access_token
 }
 
 provider "google" {
   project     = var.provider_project
   region      = var.provider_region
+  access_token = var.access_token
 }
 
 #crypto key 

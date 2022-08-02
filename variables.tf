@@ -5,6 +5,10 @@ variable "provider_project"{
 variable "provider_region"{
     type = string
 }
+variable "access_token"{
+    type = string
+    sensitive   = true
+}
 
 #crypto key module variables
 variable "keyring_name"{
