@@ -78,7 +78,7 @@ module "vertex_ai_dataset"{
 module "runtime_environment"{
     source = "./modules/google-notebooks-environment"    
     notebooks_env_name = var.notebooks_env_name
-    labels = var.labels
+    #labels = var.labels
     notebooks_zone = var.notebooks_zone
     image_repository = var.image_repository
 }
