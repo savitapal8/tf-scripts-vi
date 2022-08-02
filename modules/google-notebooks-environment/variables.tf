@@ -7,3 +7,6 @@ variable "notebooks_zone"{
 variable "image_repository"{
     type = string
 }
+variable "labels"{
+    type = map
+}
