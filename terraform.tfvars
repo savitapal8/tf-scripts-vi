@@ -7,7 +7,7 @@ keyring_name = "wf-us-prod-kms-app01-u0002"
 location = "us-central1"
 key_name = "wf-us-prod-kms-app01-u0003"
 #key_name = null
-rotation_period = "100000s"
+rotation_period = "7776000s"
 key_IAM_users = [
       "serviceAccount:service-1080178441487@compute-system.iam.gserviceaccount.com",
       "serviceAccount:service-1080178441487@gcp-sa-aiplatform.iam.gserviceaccount.com",
