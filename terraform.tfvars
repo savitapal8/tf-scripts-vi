@@ -1,26 +1,26 @@
 #provider variables
-provider_project = "internal-test-prj-ly"
+provider_project = "modular-scout-345114"
 provider_region = "us-central1"
 
 #crypto key variables
-keyring_name = "keyring-vertexai8"
+keyring_name = "keyring-vertexai81"
 location = "us-central1"
-key_name = "vertexai-key8"
+key_name = "vertexai-key81"
 rotation_period = "100000s"
 key_IAM_users = [
-      "serviceAccount:service-1056283549093@compute-system.iam.gserviceaccount.com",
-      "serviceAccount:service-1056283549093@gcp-sa-aiplatform.iam.gserviceaccount.com",
+      "serviceAccount:service-1080178441487@compute-system.iam.gserviceaccount.com",
+      "serviceAccount:service-1080178441487@gcp-sa-aiplatform.iam.gserviceaccount.com",
     ]
 key_iam_role = "roles/cloudkms.cryptoKeyEncrypterDecrypter"
 
 #notebook instance variables
-notebook_instance_name = "notebooks-instance4"
+notebook_instance_name = "notebooks-instance41"
 instance_location = "us-central1-a"
 machine_type = "e2-medium"
 vm_image_project = "deeplearning-platform-release"
 vm_image_family = "tf-latest-cpu"
 vm_instance_owners = ["admin@hashicorptest.com"]
-service_account = "1056283549093-compute@developer.gserviceaccount.com"
+service_account = "1080178441487-compute@developer.gserviceaccount.com"
 gpu_driver = true
 boot_disk_type = "PD_SSD"
 boot_disk_size = 110
@@ -39,7 +39,7 @@ instance_IAM_users = [
 instance_iam_role = "roles/viewer"
 
 #notebook runtime variables
-notebook_runtime_name = "notebooks-runtime-test4"
+notebook_runtime_name = "notebooks-runtime-test41"
 runtime_location = "us-central1" 
 access_type = "SINGLE_USER"
 runtime_owner = "admin@hashicorptest.com"
