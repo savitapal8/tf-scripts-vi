@@ -19,6 +19,7 @@ module "google_crypto_key"{
     rotation_period =  var.rotation_period
     key_IAM_users = var.key_IAM_users
     key_iam_role = var.key_iam_role
+    labels = var.labels
 }
 
 output "key_id"{
@@ -53,6 +54,7 @@ module "notebooks_runtime"{
     notebook_runtime_name = var.notebook_runtime_name
     runtime_location = var.runtime_location
     access_type = var.access_type
+    labels = var.labels
     runtime_owner = var.runtime_owner
     runtime_machine_type = var.runtime_machine_type
     runtime_boot_disk_type = var.runtime_boot_disk_type
@@ -68,7 +70,8 @@ module "vertex_ai_dataset"{
     ai_dataset_name = var.ai_dataset_name
     metadata_schema_uri = var.metadata_schema_uri 
     region = var.region
-    kms_key_id = module.google_crypto_key.key_id 
+    kms_key_id = module.google_crypto_key.key_id
+    labels = var.labels
 }
 
 #Notebooks environment
@@ -77,6 +80,7 @@ module "runtime_environment"{
     notebooks_env_name = var.notebooks_env_name
     notebooks_zone = var.notebooks_zone
     image_repository = var.image_repository
+    labels = var.labels
 }
 
 #Vertex AI Featurestore
@@ -86,6 +90,7 @@ module "vertex_ai_featurestore"{
   featurestore_labels = var.featurestore_labels
   featurestore_region = var.featurestore_region
   node_count = var.node_count
+  labels = var.labels
 }
 
 output "featurestore_id"{
