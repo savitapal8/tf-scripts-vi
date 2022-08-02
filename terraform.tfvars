@@ -21,18 +21,25 @@ machine_type = "e2-medium"
 vm_image_project = "deeplearning-platform-release"
 vm_image_family = "tf-latest-cpu"
 vm_instance_owners = ["admin@hashicorptest.com"]
-service_account = "1080178441487-compute@developer.gserviceaccount.com"
+service_account = "cloud-composer-sa-id@modular-scout-345114.iam.gserviceaccount.com"
 gpu_driver = true
 boot_disk_type = "PD_SSD"
 boot_disk_size = 110
-no_public_ip = false
-no_proxy_access = true
+no_public_ip = true
+no_proxy_access = false
 labels = { 
-    k = "val" 
-    }
+      gcp_region = "US",
+      owner = "hybridenv",
+      application_division = "pci",
+      application_name = "demo",
+      application_role = "app",
+      environment = "dev",
+      au = "Hybrid code = 0223092",
+      created = "20220802", 
+}
 metadata = {
     terraform = "true"
-    proxy-mode = "service_account_demo"
+    proxy-mode = "service_account"
   }
 instance_IAM_users = [
       "user:pkhedekar@google.com",
