@@ -2,7 +2,6 @@
 resource "google_notebooks_runtime" "runtime" {
   name = var.notebook_runtime_name
   location = var.runtime_location
-  labels = var.labels
   access_config {
     access_type = var.access_type
     runtime_owner = var.runtime_owner
