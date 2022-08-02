@@ -3,7 +3,7 @@ provider_project = "modular-scout-345114"
 provider_region = "us-central1"
 
 #crypto key variables
-keyring_name = "keyring-vertexai81"
+keyring_name = "wf-us-prod-kms-app01-u0002"
 location = "us-central1"
 key_name = "wf-us-prod-kms-app01-u0003"
 #key_name = null
