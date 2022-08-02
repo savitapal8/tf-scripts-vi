@@ -24,3 +24,10 @@ variable "key_iam_role"{
 variable "labels"{
     type = map
 }
+variable "skip_initial_version_creation"{
+    type = bool
+}
+
+variable "import_only"{
+    type = bool
+}
