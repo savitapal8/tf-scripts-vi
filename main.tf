@@ -76,11 +76,11 @@ module "vertex_ai_dataset"{
 
 #Notebooks environment
 module "runtime_environment"{
-    source = "./modules/google-notebooks-environment"
+    source = "./modules/google-notebooks-environment"    
     notebooks_env_name = var.notebooks_env_name
+    labels = var.labels
     notebooks_zone = var.notebooks_zone
     image_repository = var.image_repository
-    labels = var.labels
 }
 
 #Vertex AI Featurestore
