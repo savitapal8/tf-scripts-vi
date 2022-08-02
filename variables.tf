@@ -165,3 +165,32 @@ variable "snapshot_analysis"{
 variable "monitoring_interval"{
     type = string
 }
+variable "org" {
+  description = "org"
+  type        = string
+  default     = "wf"
+}
+
+variable "country" {
+  description = "country"
+  type        = string
+  default     = "us"
+}
+
+variable "env" {
+  description = "env"
+  type        = string
+  default     = "prod"
+}
+
+variable "appid" {
+  description = "appid"
+  type        = string
+  default     = "demo"
+}
+
+variable "uid" {
+  description = "uid"
+  type        = string
+  default     = "u1234"
+}
