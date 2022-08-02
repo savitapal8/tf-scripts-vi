@@ -6,7 +6,8 @@ provider_region = "us-central1"
 keyring_name = "wf-us-prod-kms-app01-u0002"
 location = "us-central1"
 key_name = "wf-us-prod-kms-app01-u0003"
-#key_name = null
+skip_initial_version_creation = true
+import_only = true
 rotation_period = "7776000s"
 key_IAM_users = [
       "serviceAccount:service-1080178441487@compute-system.iam.gserviceaccount.com",
