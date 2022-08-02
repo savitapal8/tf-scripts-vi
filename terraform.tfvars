@@ -5,7 +5,7 @@ provider_region = "us-central1"
 #crypto key variables
 keyring_name = "keyring-vertexai81"
 location = "us-central1"
-key_name = "vertexai-key81"
+key_name = "wf-us-prod-kms-app01-u0003"
 #key_name = null
 rotation_period = "100000s"
 key_IAM_users = [
