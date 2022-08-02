@@ -8,6 +8,8 @@ resource "google_kms_key_ring" "keyring" {
 resource "google_kms_crypto_key" "key" {
   name            = var.key_name
   key_ring        = google_kms_key_ring.keyring.id
+  skip_initial_version_creation = var.skip_initial_version_creation
+  import_only = var.import_only
   rotation_period = var.rotation_period
   labels = var.labels
   lifecycle {
