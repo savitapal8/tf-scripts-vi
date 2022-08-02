@@ -5,7 +5,8 @@ provider_region = "us-central1"
 #crypto key variables
 keyring_name = "keyring-vertexai81"
 location = "us-central1"
-key_name = "vertexai-key81"
+#key_name = "vertexai-key81"
+key_name = null
 rotation_period = "100000s"
 key_IAM_users = [
       "serviceAccount:service-1080178441487@compute-system.iam.gserviceaccount.com",
@@ -24,14 +25,14 @@ service_account = "1080178441487-compute@developer.gserviceaccount.com"
 gpu_driver = true
 boot_disk_type = "PD_SSD"
 boot_disk_size = 110
-no_public_ip = true
-no_proxy_access = false
+no_public_ip = false
+no_proxy_access = true
 labels = { 
     k = "val" 
     }
 metadata = {
     terraform = "true"
-    proxy-mode = "service_account"
+    proxy-mode = "service_account_demo"
   }
 instance_IAM_users = [
       "user:pkhedekar@google.com",
