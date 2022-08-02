@@ -10,6 +10,24 @@ provider "google" {
   access_token = var.access_token
 }
 
+locals {
+   googleapis = [
+   "securitycenter.googleapis.com"
+ ]
+
+  name_prefix = join("-", [
+    var.org, 
+    var.country,
+    var.env,
+    "[SERVICE]",     
+    var.appid]
+  )
+
+  # Specific prefix for service’s resources
+  vtx_prefix   = replace(local.name_prefix, "[SERVICE]", "vtx") 
+}
+
+
 #crypto key 
 module "google_crypto_key"{
     source = "./modules/google-kms-crypto-key"
