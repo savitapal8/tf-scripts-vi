@@ -10,24 +10,6 @@ provider "google" {
   access_token = var.access_token
 }
 
-locals {
-   googleapis = [
-   "securitycenter.googleapis.com"
- ]
-
-  name_prefix = join("-", [
-    var.org, 
-    var.country,
-    var.env,
-    "[SERVICE]",     
-    var.appid]
-  )
-
-  # Specific prefix for service’s resources
-  vtx_prefix   = replace(local.name_prefix, "[SERVICE]", "vtx") 
-}
-
-
 #crypto key 
 module "google_crypto_key"{
     source = "./modules/google-kms-crypto-key"
@@ -46,7 +28,7 @@ output "key_id"{
 #notebook instance
 module "notebooks_instance"{
     source = "./modules/google-notebooks-instance"
-    notebook_instance_name = local.vtx_prefix + "u123" #var.notebook_instance_name
+    notebook_instance_name = var.notebook_instance_name
     instance_location = var.instance_location
     machine_type = var.machine_type
     vm_image_project = var.vm_image_project
@@ -68,7 +50,7 @@ module "notebooks_instance"{
 #Notebook Runtime
 module "notebooks_runtime"{
     source = "./modules/google-notebooks-runtime"
-    notebook_runtime_name = local.vtx_prefix + "u234" #var.notebook_runtime_name
+    notebook_runtime_name = var.notebook_runtime_name
     runtime_location = var.runtime_location
     access_type = var.access_type
     runtime_owner = var.runtime_owner
@@ -83,7 +65,7 @@ module "notebooks_runtime"{
 #Vertex AI dataset
 module "vertex_ai_dataset"{
     source = "./modules/google-vertex-ai-dataset"
-    ai_dataset_name = local.vtx_prefix + "u345" #var.ai_dataset_name
+    ai_dataset_name = var.ai_dataset_name
     metadata_schema_uri = var.metadata_schema_uri 
     region = var.region
     kms_key_id = module.google_crypto_key.key_id 
@@ -92,7 +74,7 @@ module "vertex_ai_dataset"{
 #Notebooks environment
 module "runtime_environment"{
     source = "./modules/google-notebooks-environment"
-    notebooks_env_name = local.vtx_prefix + "u456" #var.notebooks_env_name
+    notebooks_env_name = var.notebooks_env_name
     notebooks_zone = var.notebooks_zone
     image_repository = var.image_repository
 }
@@ -100,7 +82,7 @@ module "runtime_environment"{
 #Vertex AI Featurestore
 module "vertex_ai_featurestore"{
   source = "./modules/google-vertex-ai-featurestore"
-  featurestore_name = local.vtx_prefix + "u567" #var.featurestore_name
+  featurestore_name = var.featurestore_name
   featurestore_labels = var.featurestore_labels
   featurestore_region = var.featurestore_region
   node_count = var.node_count
