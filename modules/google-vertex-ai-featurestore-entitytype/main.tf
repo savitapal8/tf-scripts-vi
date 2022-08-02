@@ -2,7 +2,7 @@
 resource "google_vertex_ai_featurestore_entitytype" "entity" {
   provider = google-beta
   name     = var.entitytype_name
-  labels = var.entitytype_labels
+  labels = var.labels
   featurestore = var.featurestore_id
   monitoring_config {
     snapshot_analysis {
