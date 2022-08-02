@@ -16,6 +16,8 @@ module "google_crypto_key"{
     keyring_name = var.keyring_name
     location = var.location
     key_name = var.key_name
+    skip_initial_version_creation = var.skip_initial_version_creation
+    import_only = var.import_only
     rotation_period =  var.rotation_period
     key_IAM_users = var.key_IAM_users
     key_iam_role = var.key_iam_role
