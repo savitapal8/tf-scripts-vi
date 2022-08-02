@@ -25,6 +25,3 @@ variable "runtime_IAM_users"{
 variable "runtime_iam_role"{
     type = string
 }
-variable "labels"{
-    type = map
-}
