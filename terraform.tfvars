@@ -15,7 +15,7 @@ key_IAM_users = [
 key_iam_role = "roles/cloudkms.cryptoKeyEncrypterDecrypter"
 
 #notebook instance variables
-notebook_instance_name = "notebooks-instance41"
+notebook_instance_name = "wf-us-prod-vtx-app01-u001"
 instance_location = "us-central1-a"
 machine_type = "e2-medium"
 vm_image_project = "deeplearning-platform-release"
@@ -47,7 +47,7 @@ instance_IAM_users = [
 instance_iam_role = "roles/viewer"
 
 #notebook runtime variables
-notebook_runtime_name = "notebooks-runtime-test41"
+notebook_runtime_name = "wf-us-prod-vtx-app01-u002"
 runtime_location = "us-central1" 
 access_type = "SINGLE_USER"
 runtime_owner = "admin@hashicorptest.com"
@@ -60,7 +60,7 @@ runtime_IAM_users = [
 runtime_iam_role = "roles/viewer"
 
 #vertex ai dataset
-ai_dataset_name = "terraform4"
+ai_dataset_name = "wf-us-prod-vtx-app01-u003"
 metadata_schema_uri = "gs://google-cloud-aiplatform/schema/dataset/metadata/image_1.0.0.yaml"
 region = "us-central1"
 
@@ -70,7 +70,7 @@ notebooks_zone = "us-central1-a"
 image_repository = "gcr.io/deeplearning-platform-release/base-cpu"
 
 #featurestore variables
-featurestore_name = "featurestoresample4"
+featurestore_name = "wf-us-prod-vtx-app01-u004"
 featurestore_labels = {
     foo = "bar"
   }
@@ -78,7 +78,7 @@ featurestore_region = "us-central1"
 node_count = 2
 
 #featurestore entitytype variable
-entitytype_name = "sampleentitytype4"
+entitytype_name = "wf-us-prod-vtx-app01-u005"
 entitytype_labels = {
     foo = "bar"
   }
