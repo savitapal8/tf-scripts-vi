@@ -65,7 +65,7 @@ metadata_schema_uri = "gs://google-cloud-aiplatform/schema/dataset/metadata/imag
 region = "us-central1"
 
 #notebook runtime environment
-notebooks_env_name = "runtimeenv4"
+notebooks_env_name = "wf-us-prod-vtx-app01-u008"
 notebooks_zone = "us-central1-a"
 image_repository = "gcr.io/deeplearning-platform-release/base-cpu"
 
