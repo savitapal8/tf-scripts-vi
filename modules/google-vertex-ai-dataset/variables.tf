@@ -10,3 +10,6 @@ variable "region"{
 variable "kms_key_id"{
     type = string
 }
+variable "labels"{
+    type = map
+}
