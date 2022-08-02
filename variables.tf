@@ -23,6 +23,14 @@ variable "key_name"{
     type = string
     description = "CMEK name"
 }
+variable "skip_initial_version_creation"{
+    type = bool
+    description = "skip_initial_version_creation"
+}
+variable "import_only"{
+    type = bool
+    description = "import_only"
+}
 variable "rotation_period"{
     type = string
     description = "key rotation period in seconds"
