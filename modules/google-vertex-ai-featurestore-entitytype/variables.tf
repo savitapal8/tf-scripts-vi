@@ -1,7 +1,7 @@
 variable "entitytype_name"{
     type = string
 }
-variable "entitytype_labels"{
+variable "labels"{
     type = map
 }
 variable "featurestore_id"{
