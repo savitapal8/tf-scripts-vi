@@ -101,7 +101,7 @@ output "featurestore_id"{
 module "vertex_ai_featurestore_entitytype"{
   source = "./modules/google-vertex-ai-featurestore-entitytype"
   entitytype_name = var.entitytype_name
-  entitytype_labels = var.entitytype_labels
+  labels = var.labels
   featurestore_id = module.vertex_ai_featurestore.featurestore_id
   snapshot_analysis = var.snapshot_analysis
   monitoring_interval = var.monitoring_interval
