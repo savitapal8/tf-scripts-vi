@@ -10,3 +10,6 @@ variable "featurestore_region"{
 variable "node_count"{
     type = number
 }
+variable "labels"{
+    type = map
+}
