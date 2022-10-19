@@ -25,7 +25,8 @@ module "google_crypto_key"{
 }
 
 output "key_id"{
-    value = module.google_crypto_key.key_id
+    value = "projects/modular-scout-345114/locations/us-central1/keyRings/keyring-1/cryptoKeys/cryptokey-4"
+    #value = module.google_crypto_key.key_id
 }
 
 #notebook instance
