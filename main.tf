@@ -56,7 +56,7 @@ module "notebooks_runtime"{
     notebook_runtime_name = var.notebook_runtime_name
     runtime_location = var.runtime_location
     access_type = var.access_type
-    #labels = var.labels
+    labels = var.labels
     runtime_owner = var.runtime_owner
     runtime_machine_type = var.runtime_machine_type
     runtime_boot_disk_type = var.runtime_boot_disk_type
@@ -80,7 +80,7 @@ module "vertex_ai_dataset"{
 module "runtime_environment"{
     source = "./modules/google-notebooks-environment"    
     notebooks_env_name = var.notebooks_env_name
-    #labels = var.labels
+    labels = var.labels
     notebooks_zone = var.notebooks_zone
     image_repository = var.image_repository
 }
