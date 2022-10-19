@@ -3,7 +3,7 @@ provider_project = "modular-scout-345114"
 provider_region = "us-central1"
 
 #crypto key variables
-keyring_name = "wf-us-prod-kms-app012-u0002"
+keyring_name = "wf-us-prod-kms-app0121-u0002"
 location = "us-central1"
 key_name = "wf-us-prod-kms-app012-u0003"
 skip_initial_version_creation = true
@@ -66,7 +66,7 @@ metadata_schema_uri = "gs://google-cloud-aiplatform/schema/dataset/metadata/imag
 region = "us-central1"
 
 #notebook runtime environment
-notebooks_env_name = "wf-us-prod-vtx-app012-u008"
+notebooks_env_name = "wf-us-prod-vtx-app0121-u008"
 notebooks_zone = "us-central1-a"
 image_repository = "gcr.io/deeplearning-platform-release/base-cpu"
 
