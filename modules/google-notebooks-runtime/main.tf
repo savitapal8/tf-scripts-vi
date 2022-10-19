@@ -18,6 +18,7 @@ resource "google_notebooks_runtime" "runtime" {
       encryption_config {
         kms_key = "wf-us-prod-kms-app01-u0003"
       }
+      internal_ip_only = true
     }
   }
 }
