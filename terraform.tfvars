@@ -71,7 +71,7 @@ notebooks_zone = "us-central1-a"
 image_repository = "gcr.io/deeplearning-platform-release/base-cpu"
 
 #featurestore variables
-featurestore_name = "wf-us-prod-vtx-app012-u004"
+featurestore_name = "wf_us_prod_vtx_app012_u004"
 featurestore_labels = {
     foo = "bar"
   }
