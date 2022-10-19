@@ -46,7 +46,7 @@ module "notebooks_instance"{
     no_proxy_access = var.no_proxy_access
     labels = var.labels
     metadata = var.metadata
-    kms_key_id = output.key_id
+    kms_key_id = "projects/modular-scout-345114/locations/us-central1/keyRings/keyring-1/cryptoKeys/cryptokey-4"
     instance_IAM_users = var.instance_IAM_users
     instance_iam_role = var.instance_iam_role
 }
@@ -65,7 +65,7 @@ module "notebooks_runtime"{
     runtime_iam_role = var.runtime_iam_role
     runtime_IAM_users = var.runtime_IAM_users
     #kms_key_id = module.google_crypto_key.key_id
-    kms_key_id = output.key_id
+    kms_key_id = "projects/modular-scout-345114/locations/us-central1/keyRings/keyring-1/cryptoKeys/cryptokey-4"
 }
 
 
@@ -75,7 +75,7 @@ module "vertex_ai_dataset"{
     ai_dataset_name = var.ai_dataset_name
     metadata_schema_uri = var.metadata_schema_uri 
     region = var.region
-    kms_key_id = output.key_id
+    kms_key_id = "projects/modular-scout-345114/locations/us-central1/keyRings/keyring-1/cryptoKeys/cryptokey-4"
     labels = var.labels
 }
 
