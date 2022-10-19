@@ -3,9 +3,9 @@ provider_project = "modular-scout-345114"
 provider_region = "us-central1"
 
 #crypto key variables
-keyring_name = "wf-us-prod-kms-app013-u0002"
+keyring_name = "wf-us-prod-kms-app014-u0002"
 location = "us-central1"
-key_name = "wf-us-prod-kms-app012-u0003"
+key_name = "wf-us-prod-kms-app014-u0003"
 skip_initial_version_creation = true
 import_only = true
 rotation_period = "7776000s"
@@ -16,7 +16,7 @@ key_IAM_users = [
 key_iam_role = "roles/cloudkms.cryptoKeyEncrypterDecrypter"
 
 #notebook instance variables
-notebook_instance_name = "wf-us-prod-nbk-app012-u001"
+notebook_instance_name = "wf-us-prod-nbk-app014-u001"
 instance_location = "us-central1-a"
 machine_type = "e2-medium"
 vm_image_project = "deeplearning-platform-release"
@@ -48,7 +48,7 @@ instance_IAM_users = [
 instance_iam_role = "roles/viewer"
 
 #notebook runtime variables
-notebook_runtime_name = "wf-us-prod-nbk-app012-u002"
+notebook_runtime_name = "wf-us-prod-nbk-app014-u002"
 runtime_location = "us-central1" 
 access_type = "SERVICE_ACCOUNT"
 runtime_owner = "cloud-composer-sa-id@modular-scout-345114.iam.gserviceaccount.com"
@@ -61,17 +61,17 @@ runtime_IAM_users = [
 runtime_iam_role = "roles/viewer"
 
 #vertex ai dataset
-ai_dataset_name = "wf-us-prod-vtx-app012-u003"
+ai_dataset_name = "wf-us-prod-vtx-app014-u003"
 metadata_schema_uri = "gs://google-cloud-aiplatform/schema/dataset/metadata/image_1.0.0.yaml"
 region = "us-central1"
 
 #notebook runtime environment
-notebooks_env_name = "wf-us-prod-vtx-app013-u008"
+notebooks_env_name = "wf-us-prod-vtx-app014-u008"
 notebooks_zone = "us-central1-a"
 image_repository = "gcr.io/deeplearning-platform-release/base-cpu"
 
 #featurestore variables
-featurestore_name = "wf_us_prod_vtx_app012_u004"
+featurestore_name = "wf_us_prod_vtx_app014_u004"
 featurestore_labels = {
     foo = "bar"
   }
@@ -79,7 +79,7 @@ featurestore_region = "us-central1"
 node_count = 2
 
 #featurestore entitytype variable
-entitytype_name = "wf-us-prod-vtx-app012-u005"
+entitytype_name = "wf_us_prod_vtx_app014_u005"
 entitytype_labels = {
     foo = "bar"
   }
