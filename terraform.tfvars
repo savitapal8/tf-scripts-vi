@@ -61,7 +61,7 @@ runtime_IAM_users = [
 runtime_iam_role = "roles/viewer"
 
 #vertex ai dataset
-ai_dataset_name = "wf-us-prod-vtx-app01-u003"
+ai_dataset_name = "wf-us-prod-vtxi-app01-u003"
 metadata_schema_uri = "gs://google-cloud-aiplatform/schema/dataset/metadata/image_1.0.0.yaml"
 region = "us-central1"
 
