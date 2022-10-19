@@ -29,7 +29,14 @@ boot_disk_size = 110
 no_public_ip = true
 no_proxy_access = false
 labels = { 
-       
+      gcp_region = "us",
+      owner = "hybridenv",
+      application_division = "pci",
+      application_name = "demo",
+      application_role = "app",
+      environment = "prod",
+      au = "0223092",
+      created = "20220802",
 }
 metadata = {
     terraform = "true"
