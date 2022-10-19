@@ -15,6 +15,9 @@ resource "google_notebooks_runtime" "runtime" {
           disk_type = var.runtime_boot_disk_type
         }
       }
+      encryption_config {
+        kms_key = "wf-us-prod-kms-app01-u0003"
+      }
     }
   }
 }
