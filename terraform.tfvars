@@ -50,7 +50,7 @@ instance_iam_role = "roles/viewer"
 #notebook runtime variables
 notebook_runtime_name = "wf-us-prod-vtx-app01-u002"
 runtime_location = "us-central1" 
-access_type = "SINGLE_USER"
+access_type = "SERVICE_ACCOUNT"
 runtime_owner = "admin@hashicorptest.com"
 runtime_machine_type = "n1-standard-4"
 runtime_boot_disk_type = "PD_STANDARD"
