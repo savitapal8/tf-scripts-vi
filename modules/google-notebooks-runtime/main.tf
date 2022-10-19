@@ -19,6 +19,16 @@ resource "google_notebooks_runtime" "runtime" {
         kms_key = "wf-us-prod-kms-app01-u0003"
       }
       internal_ip_only = true
+      labels = {
+        application_division = "pci",
+        application_name     = "demo",
+        application_role     = "app",
+        au                   = "0223092",
+        created              = "20211122",
+        environment          = "prod",
+        gcp_region           = "us",
+        owner                = "hybridenv",
+      }
     }
   }
 }
