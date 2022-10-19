@@ -12,6 +12,7 @@ resource "google_notebooks_instance" "instance" {
   name = var.notebook_instance_name
   location = var.instance_location
   machine_type = var.machine_type
+  disk_encryption = "CMEK"
 
   vm_image {
     project      = var.vm_image_project
