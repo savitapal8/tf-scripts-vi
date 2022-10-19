@@ -63,6 +63,7 @@ module "notebooks_runtime"{
     runtime_boot_disk_size = var.runtime_boot_disk_size
     runtime_iam_role = var.runtime_iam_role
     runtime_IAM_users = var.runtime_IAM_users
+    kms_key_id = module.google_crypto_key.key_id
 }
 
 
