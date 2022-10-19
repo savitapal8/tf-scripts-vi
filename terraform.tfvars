@@ -16,7 +16,7 @@ key_IAM_users = [
 key_iam_role = "roles/cloudkms.cryptoKeyEncrypterDecrypter"
 
 #notebook instance variables
-notebook_instance_name = "wf-us-prod-vtx-app01-u001"
+notebook_instance_name = "wf-us-prod-nbk-app01-u001"
 instance_location = "us-central1-a"
 machine_type = "e2-medium"
 vm_image_project = "deeplearning-platform-release"
@@ -48,7 +48,7 @@ instance_IAM_users = [
 instance_iam_role = "roles/viewer"
 
 #notebook runtime variables
-notebook_runtime_name = "wf-us-prod-vtx-app01-u002"
+notebook_runtime_name = "wf-us-prod-nbk-app01-u002"
 runtime_location = "us-central1" 
 access_type = "SERVICE_ACCOUNT"
 runtime_owner = "admin@hashicorptest.com"
