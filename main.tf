@@ -56,7 +56,6 @@ module "notebooks_runtime"{
     notebook_runtime_name = var.notebook_runtime_name
     runtime_location = var.runtime_location
     access_type = var.access_type
-    labels = var.labels
     runtime_owner = var.runtime_owner
     runtime_machine_type = var.runtime_machine_type
     runtime_boot_disk_type = var.runtime_boot_disk_type
