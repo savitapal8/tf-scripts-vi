@@ -16,7 +16,7 @@ resource "google_notebooks_runtime" "runtime" {
         }
       }
       encryption_config {
-        kms_key = "wf-us-prod-kms-app01-u0003"
+        kms_key = var.kms_key_id
       }
       internal_ip_only = true
       labels = {
